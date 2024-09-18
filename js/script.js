@@ -1,7 +1,7 @@
 
 console.log("Jeg er i guessnumber");
 
-// Selecting elements
+// Vælger Elementer
 const lbMessage = document.querySelector(".message");
 const lbNumber = document.querySelector(".number");
 const lbScore = document.querySelector(".score");
@@ -18,7 +18,7 @@ const displayMessage = function (message) {
     lbMessage.textContent = message;    // Funktion til at ændre teksten i lbMessage
 };
 
-// Event listener for check button
+// Event listener for check-button
 btnCheck.addEventListener("click", function () {
     const guess = Number(inpGuess.value); // Konverterer input til et tal
 
@@ -48,7 +48,7 @@ btnCheck.addEventListener("click", function () {
     }
 });
 
-// Event listener for again button
+// Event listener for again-button
 btnAgain.addEventListener("click", function () {
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
@@ -61,7 +61,7 @@ btnAgain.addEventListener("click", function () {
     document.body.style.backgroundColor = "#222";
     lbNumber.style.width = "15rem";
 
-    //tilføjer fade-in animation
+    // Tilføjer fade-in animation
     document.body.classList.add("fade-in");
    // Fjerner fade-in animation efter 0.5 sekunder for at kunne køre animationen igen
     setTimeout(function() {
